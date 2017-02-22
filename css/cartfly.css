@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+.col-lg-2 {
+   position: static;
+}
+
+/* quick_links */
+.mui-mbar-tabs, .notproductcart{
+	margin-bottom: 10px; 
+	width:100%; 
+	z-index:10001;
+	-webkit-transition:width linear .4s;
+	-moz-transition:width linear .4s;
+	-ms-transition:width linear .4s;
+	transition:width linear .4s;
+	_position:fixed;
+	_bottom:auto;
+	_top:expression(documentElement.scrollTop+documentElement.clientHeight-this.offsetHeight-10);
+	/*top: 60px; 
+	position:fixed;*/
+}
+#shopCarthide{ display:none;}
+.quick_links-title{
+	margin:0;
+	background-color:#54b8ca;
+	height:44px;
+	line-height:44px;
+	color:#fff;
+	text-indent:13px;
+}
+.quick_links-footer{ text-align:center; color:#ccc; height:20px; line-height:20px;  width: 100%; overflow: hidden;margin-top: 6px; margin-bottom: 6px;}
+.quick_links-footer i{ color:#000;  vertical-align: text-bottom; margin-right: .3em;}
+.cartempty i{vertical-align: baseline;}
+.quick_links-title img{
+  font-size: 24px;
+  vertical-align: middle;
+  font-weight: 300;position: relative;  
+  width:32px;
+  height:32px;
+  margin-left:6px;
+  margin-top:-4px;
+  line-height:50px;
+}
+.quick_links .listproductcart a{
+  height: 44px;
+  line-height: 44px;
+  color: #fff;
+  font-size:18px;
+  width:60%;
+}	
+.notproductcart{
+  width: 100%;
+  text-align: center;
+  text-indent: 0;
+}
+#shopCart{
+	padding:0;
+    overflow-y: overlay;  margin: 0;
+}
+#shopCart li{ list-style:none; height: 60px; padding: 10px;padding-bottom: 0;}
+#shopCart img{width:50px; float: left; margin-right:10px;  border: 1px solid #ddd;}
+#cartulboxli{width:100%; max-height:140px; overflow:hidden;position: relative;}
+.quick_links a{
+  display: block;
+  font-size: 12px;
+  float: left;
+  width: 56%;
+  color: #000;
+  line-height: 12px;
+  height: 35px;
+  word-spacing: normal;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-decoration: none;
+  -o-text-overflow:ellipsis;
+}
+.quick_links p{
+  width: 56%;
+  display: inline-block;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;float:left;
+  line-height: 13px; color:#54b8ca;
+}
+
+.quick_links{
+	z-index:2;
+	border: 2px solid #54b8ca;  
+	background-color: #fff; 
+	width:100%;
+    font-family: 'microsoft yahei',arial;
+	border-radius: 6px;
+}
+
+.fly_item{width:38px;height:38px;overflow:hidden;position:absolute;visibility:hidden;opacity:.9;filter:alpha(opacity=90);}
+.shop_cart{width:106px;height:25px;line-height:25px;padding-top:8px; font-family:'microsoft yahei';font-size:12px;text-indent:34px;color:#000;position:absolute;right:50px;top:240px;}
